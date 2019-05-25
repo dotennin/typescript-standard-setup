@@ -9,7 +9,8 @@
     "dev:watch": "npx ts-node-dev --respawn src/index.ts",
     "clean": "rimraf dist/*",
     "build": "npm-run-all clean tsc",
-    "start": "node ."
+    "start": "node .",
+    "eslint":"eslint --fix src/"
   },
   "keywords": [],
   "author": "",

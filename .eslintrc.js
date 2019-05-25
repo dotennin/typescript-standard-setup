@@ -1,6 +1,9 @@
 module.exports = {
+  "env": {
+    "es6": true
+  },
   "extends": [
-    "eslint:recommended", // お好きなESLint設定をここに
+    "eslint:recommended",
     "plugin:prettier/recommended"
   ],
   "plugins": [
@@ -12,8 +15,15 @@ module.exports = {
     "project": "./tsconfig.json"
   },
   "rules": {
-    // お好みのルール設定を
-    "@typescript-eslint/adjacent-overload-signatures": "error"
-    // ...
+    "prettier/prettier": [
+      "error",
+      {
+        "singleQuote": true,
+        "trailingComma": "es5"
+      }
+    ],
+    "@typescript-eslint/adjacent-overload-signatures": "error",
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": "error"
   }
 }
