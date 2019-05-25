@@ -16,10 +16,7 @@
     "eslint": "eslint --fix src/"
   },
   "lint-staged": {
-    "*.ts": [
-      "npm run eslint",
-      "git add"
-    ]
+    "*.{ts,tsx}": ["eslint", "git add ."]
   },
   "dependencies": {
     "typescript": "^3.4.5"
