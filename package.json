@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "tsc": "tsc",
@@ -10,11 +13,14 @@
     "clean": "rimraf dist/*",
     "build": "npm-run-all clean tsc",
     "start": "node .",
-    "eslint":"eslint --fix src/"
+    "eslint": "eslint --fix src/"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "lint-staged": {
+    "*.ts": [
+      "npm run eslint",
+      "git add"
+    ]
+  },
   "dependencies": {
     "typescript": "^3.4.5"
   },
@@ -24,6 +30,8 @@
     "eslint": "^5.16.0",
     "eslint-config-prettier": "^4.3.0",
     "eslint-plugin-prettier": "^3.1.0",
+    "husky": "^2.3.0",
+    "lint-staged": "^8.1.7",
     "npm-run-all": "^4.1.5",
     "prettier": "^1.17.1",
     "rimraf": "^2.6.3",
