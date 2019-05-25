@@ -13,10 +13,10 @@
     "clean": "rimraf dist/*",
     "build": "npm-run-all clean tsc",
     "start": "node .",
-    "eslint": "eslint --fix src/"
+    "eslint": "eslint --fix"
   },
   "lint-staged": {
-    "*.{ts,tsx}": ["eslint", "git add ."]
+    "*.{ts,tsx}": ["npm run eslint", "git add ."]
   },
   "dependencies": {
     "typescript": "^3.4.5"
