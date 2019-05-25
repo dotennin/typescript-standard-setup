@@ -1,4 +1,5 @@
 function hello(name: string): string {
-  return `Hello, ${name}!`;
+  return `Hello, ${name}!`
 }
-hello('World');
+
+hello('333')

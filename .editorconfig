@@ -9,8 +9,6 @@ indent_style = space
 trim_trailing_whitespace = true
 
 [Makefile]
-indent_size = 4
-indent_style = tab
 
 [*.{md,markdown}]
 insert_final_newline = false
