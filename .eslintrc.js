@@ -33,5 +33,8 @@ module.exports = {
     "@typescript-eslint/no-unused-vars": "error",
     "indent": [2, 2],
     "@typescript-eslint/indent": [2, 2],
+    "eqeqeq": 2,
+    "no-var": 2,
+    "prefer-const": 2,
   }
 }
