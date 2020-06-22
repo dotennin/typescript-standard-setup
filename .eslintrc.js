@@ -29,6 +29,7 @@ module.exports = {
       }
     ],
     "@typescript-eslint/adjacent-overload-signatures": "error",
+    "@typescript-eslint/explicit-function-return-type": 0,
     "no-unused-vars": "error",
     "@typescript-eslint/no-unused-vars": "error",
     "indent": [2, 2],
