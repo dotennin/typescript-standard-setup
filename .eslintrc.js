@@ -36,7 +36,7 @@ module.exports = {
     "@typescript-eslint/no-non-null-assertion": 0,
     "no-unused-vars": "error",
     "@typescript-eslint/no-unused-vars": "error",
-    "indent": [2, 2],
+    'indent': [2, 2, {'SwitchCase': 1}],
     "@typescript-eslint/indent": [2, 2],
     "eqeqeq": 2,
     "no-var": 2,
