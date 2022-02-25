@@ -9,10 +9,16 @@
     "lib": ["DOM", "ESNext"],
     "baseUrl": "./",
     "paths": {
-      "*": ["./src/@types/*"]
+      "*": ["src/@types/*"]
     }
   },
   "include": [
-    "src/**/*"
+    "**/*"
+  ],
+  "exclude": [
+    "cache",
+    "node_modules",
+    ".cache",
+    "dist"
   ]
 }

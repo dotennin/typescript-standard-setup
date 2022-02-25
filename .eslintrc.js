@@ -1,7 +1,8 @@
 module.exports = {
   "env": {
     "es6": true,
-    "node": true
+    "node": true,
+    "jest": true
   },
   "extends": [
     "eslint:recommended",
@@ -50,5 +51,6 @@ module.exports = {
         "@typescript-eslint/no-var-requires": "off"
       }
     }
-  ]
+  ],
+  ignorePatterns: ['.eslintrc.js, jest.config.js']
 }
