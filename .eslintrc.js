@@ -35,6 +35,7 @@ module.exports = {
     "@typescript-eslint/interface-name-prefix": "off",
     "@typescript-eslint/no-non-null-assertion": "off",
     "@typescript-eslint/no-unused-vars": ["warn", { argsIgnorePattern: "^_" }],
+    '@typescript-eslint/no-explicit-any': ['error'],
     "no-console": "off",
     'indent': 'off',
     '@typescript-eslint/indent': 'off',
