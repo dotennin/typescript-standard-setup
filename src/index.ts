@@ -2,4 +2,4 @@ function hello(name: string): string {
   return `Hello, ${name}!`
 }
 
-console.log(hello('454545'))
+console.log(hello('454545ddd'))
