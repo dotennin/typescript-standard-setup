@@ -1,6 +1,7 @@
 {
   "name": "typescript-standard-setup",
   "version": "1.0.0",
+  "type": "module",
   "description": "",
   "main": "dist/index.js",
   "keywords": [],
@@ -9,7 +10,7 @@
   "scripts": {
     "test": "jest",
     "tsc": "tsc -p tsconfig.build.json",
-    "dev:watch": "nodemon src/index.ts 80",
+    "dev": "nodemon",
     "clean": "rimraf dist/*",
     "build": "npm-run-all clean tsc",
     "serve": "node dist/index.js",
