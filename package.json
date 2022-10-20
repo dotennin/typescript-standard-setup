@@ -15,7 +15,7 @@
     "tsc": "tsc -p tsconfig.build.json",
     "build:watch": "node build.js --watch",
     "build": "node build.js",
-    "serve": "nodemon dist/index.js",
+    "serve": "node dist/index.js",
     "watch": "nodemon --watch 'src/**/*' -e ts --exec 'ts-node' ./src/index.ts",
     "eslint": "eslint --fix src/*.*",
     "prepare": "husky install"
