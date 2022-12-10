@@ -36,7 +36,7 @@ module.exports = {
     "@typescript-eslint/no-non-null-assertion": "off",
     "@typescript-eslint/no-unused-vars": ["warn", { argsIgnorePattern: "^_" }],
     "@typescript-eslint/no-explicit-any": ["error"],
-    "no-console": "off",
+    "no-console": ["warn", { allow: ["warn", "error", "assert", "table"] }],
     indent: "off",
     "@typescript-eslint/indent": "off",
     eqeqeq: "error",
