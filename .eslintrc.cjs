@@ -4,7 +4,7 @@ module.exports = {
     node: true,
     jest: true,
   },
-  ignorePatterns: ['.eslintrc.*'],
+  ignorePatterns: [".eslintrc.*"],
   extends: [
     "eslint:recommended",
     "plugin:prettier/recommended",
@@ -42,6 +42,13 @@ module.exports = {
     eqeqeq: "error",
     "no-var": "error",
     "prefer-const": "error",
+    "import/order": [
+      "error",
+      {
+        alphabetize: { order: "asc" },
+        "newlines-between": "never",
+      },
+    ],
   },
   overrides: [
     {
