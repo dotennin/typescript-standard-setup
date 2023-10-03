@@ -1,12 +1,14 @@
-const fs = require('fs')
-const esbuild = require('esbuild')
+const fs = require("fs");
+const esbuild = require("esbuild");
 
-const outputDir = 'dist'
-if (!fs.existsSync(outputDir)) {
-  fs.rmdirSync(outputDir, { recursive: true })
+const outputDir = "dist";
+if (fs.existsSync(outputDir)) {
+  fs.rmdirSync(outputDir, { recursive: true });
 }
-const isWatchMode = process.argv.slice(2).some((arg) => ['-w', '--watch'].includes(arg))
-console.info('isWatchMode', isWatchMode)
+const isWatchMode = process.argv
+  .slice(2)
+  .some((arg) => ["-w", "--watch"].includes(arg));
+console.info("isWatchMode", isWatchMode);
 if (isWatchMode) {
   esbuild
     .build({
@@ -33,6 +35,5 @@ if (isWatchMode) {
     target: ["node14"],
     outfile: outputDir + "/index.js",
   });
-  console.info('result:', result)
-
+  console.info("result:", result);
 }
