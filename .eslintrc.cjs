@@ -2,7 +2,6 @@ module.exports = {
   env: {
     es6: true,
     node: true,
-    jest: true,
   },
   ignorePatterns: [".eslintrc.*"],
   extends: [
@@ -58,5 +57,5 @@ module.exports = {
       },
     },
   ],
-  ignorePatterns: [".eslintrc.js, jest.config.js", "build.js"],
+  ignorePatterns: [".eslintrc.[c]js", "vitest.config.ts", "build.js"],
 };
