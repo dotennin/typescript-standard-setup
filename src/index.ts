@@ -1,3 +1,5 @@
+import os from 'os'
 import { hello } from './hello'
 
-console.log(hello('454545ddd'))
+const cpus = os.cpus()
+console.log(hello(`my cpu core count is: ${cpus.length}`))

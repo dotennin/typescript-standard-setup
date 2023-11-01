@@ -9,7 +9,7 @@ module.exports = {
     "plugin:prettier/recommended",
     "plugin:@typescript-eslint/recommended",
   ],
-  plugins: ["@typescript-eslint", "import"],
+  plugins: ["@typescript-eslint", "import", "sort-keys-fix"],
   parser: "@typescript-eslint/parser",
   parserOptions: {
     sourceType: "module",
@@ -48,6 +48,7 @@ module.exports = {
         "newlines-between": "never",
       },
     ],
+    "sort-keys-fix/sort-keys-fix": "warn",
   },
   overrides: [
     {
